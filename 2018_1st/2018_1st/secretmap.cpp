@@ -9,23 +9,24 @@ void findMap(int n, int arr1[], int arr2[]) {
 
 	for (int i = 0; i < n; i++) {
 		string temp;
-		for (int j = 0; j < n; j++) {
-			if (arr1[i] % 2 | arr2[i] % 2) {
+		int k = arr1[i] | arr2[i];
+
+		for (int j = 0 ; j  < n ; j++) {
+			if (k % 2 == 1) {
 				temp += "#";
 			}
-			else {
+			else if(k % 2 == 0){
 				temp += " ";
 			}
-			arr1[i] = arr1[i] / 2;
-			arr2[i] = arr2[i] / 2;
+			k = k / 2;
 		}
 		reverse(temp.begin(), temp.end());
 		result[i] = temp;
 	}
-
+	
 	for (int i = 0; i < n; i++) {
 		cout << result[i] << endl;
-	}
+	}	
 
 	delete[] result;
 
