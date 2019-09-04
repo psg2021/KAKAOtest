@@ -33,6 +33,7 @@ void findMap(int n, int arr1[], int arr2[]) {
 	return;
 }
 
+/*
 int main() {
 	int n;
 
@@ -54,3 +55,4 @@ int main() {
 	delete[] arr2;
 
 }
+*/
