@@ -48,6 +48,7 @@ int score(string input) {
 	return result;
 }
 
+/*
 int main() {
 	string input;
 	int result;
@@ -59,3 +60,4 @@ int main() {
 
 	return 0;
 }
+*/
